@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Opencart App Test Regression Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <listeners>
+    <listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
+  </listeners>
+  <test thread-count="4" parallel="tests" name="Login Page Test(failed)" verbose="4">
+    <classes>
+      <class name="com.qa.opencart.tests.LoginPageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Login Page Test(failed) -->
+  <test thread-count="4" parallel="tests" name="Accounts Page Test(failed)" verbose="4">
+    <classes>
+      <class name="com.qa.opencart.tests.AccountsPageTest">
+        <methods>
+          <include name="accountPageTitleTest"/>
+          <include name="accPageSetUp"/>
+          <include name="setUp"/>
+          <include name="AccountsPageHeadersTest"/>
+          <include name="isLogoutExists"/>
+          <include name="tearDown"/>
+          <include name="accountPageUrlTest"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.AccountsPageTest -->
+    </classes>
+  </test> <!-- Accounts Page Test(failed) -->
+</suite> <!-- Failed suite [Opencart App Test Regression Suite] -->
